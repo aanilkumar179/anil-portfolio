@@ -97,3 +97,7 @@ setTimeout(() => {
 document.getElementById("contactForm").addEventListener("submit", function () {
     this.submitted = true;
 });
+function toggleMobileMenu() {
+    document.querySelector("header").classList.toggle("mobile-nav-active");
+}
+
