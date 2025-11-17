@@ -640,6 +640,63 @@ header {
     }
 }
 
+/* =====================
+   NAVBAR MOBILE STYLES
+===================== */
+
+/* Hide hamburger icon by default */
+.mobile-menu-btn {
+    display: none;
+}
+
+/* Navbar mobile styling */
+@media (max-width: 900px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        font-size: 32px;
+        color: #008080;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .nav-right.active {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        width: 100%;
+        padding: 20px 0;
+        margin-top: 15px;
+        border-radius: 12px;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .nav-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav-icons img {
+        width: 34px;
+        height: 34px;
+    }
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
@@ -1175,4 +1232,5 @@ header {
         font-size: 28px;
     }
 }
+
 
