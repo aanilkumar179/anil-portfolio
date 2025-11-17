@@ -101,3 +101,11 @@ function toggleMobileMenu() {
     document.querySelector("header").classList.toggle("mobile-nav-active");
 }
 
+// MOBILE NAVIGATION TOGGLE
+const mobileBtn = document.getElementById("mobileMenuBtn");
+const navMenu = document.getElementById("navMenu");
+
+mobileBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+
