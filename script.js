@@ -98,3 +98,8 @@ document.getElementById("contactForm").addEventListener("submit", function () {
     this.submitted = true;
 });
 
+<script>
+function toggleMenu() {
+    document.querySelector(".nav-menu").classList.toggle("active");
+}
+</script>
