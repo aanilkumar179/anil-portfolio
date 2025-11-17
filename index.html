@@ -9,66 +9,67 @@
 <body>
  <body>
 
-    <!-- NAVBAR -->
-  <header>
+  
+<!-- ================= NAVBAR ================= -->
+<header class="header">
     <div class="logo">AAKY</div>
 
-    <div class="nav-right">
-        <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#traits">Personal Traits</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- HAMBURGER ICON -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-        <div class="nav-icons">
-            <a href="https://www.linkedin.com/in/anil-kyadav" target="_blank">
-                <img src="img/linkedin.png" alt="LinkedIn">
-            </a>
+    <!-- NAV MENU -->
+    <nav class="nav-menu">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#traits">Personal Traits</a>
+        <a href="#contact">Contact</a>
 
-            <a href="https://github.com/aanilkumar179" target="_blank">
-                <img src="img/github.png" alt="GitHub">
-            </a>
-
-            <a href="https://wa.me/447342375271" target="_blank">
-                <img src="img/whatsapp.png" alt="WhatsApp UK">
-            </a>
-
-            <a href="https://wa.me/917397378407" target="_blank">
-                <img src="img/whatsapp.png" alt="WhatsApp India">
-            </a>
+        <!-- MOBILE SOCIAL ICONS -->
+        <div class="nav-icons-mobile">
+            <a href="https://www.linkedin.com/in/anil-kyadav" target="_blank"><img src="img/linkedin.png"></a>
+            <a href="https://github.com/aanilkumar179" target="_blank"><img src="img/github.png"></a>
+            <a href="https://wa.me/447342735271" target="_blank"><img src="img/whatsapp.png"></a>
+            <a href="https://wa.me/917397378407" target="_blank"><img src="img/whatsapp.png"></a>
         </div>
+    </nav>
+
+    <!-- DESKTOP ICONS -->
+    <div class="nav-icons">
+        <a href="https://www.linkedin.com/in/anil-kyadav" target="_blank"><img src="img/linkedin.png"></a>
+        <a href="https://github.com/aanilkumar179" target="_blank"><img src="img/github.png"></a>
+        <a href="https://wa.me/447342735271" target="_blank"><img src="img/whatsapp.png"></a>
+        <a href="https://wa.me/917397378407" target="_blank"><img src="img/whatsapp.png"></a>
     </div>
 </header>
 
 
 
-    <!-- Hero Section -->
-   <section id="hero">
+<!-- ================= HERO SECTION ================= -->
+<section id="hero" class="hero-section">
     <div class="hero-container">
 
         <div class="hero-text">
             <h1>Hello, I'm <span>Anil Kumar</span></h1>
-            <h2>Aerospace Engineer | Designer | Photographer | Chef</h2>
+            <h2>Aerospace Engineer | Designer | Photographer</h2>
 
             <p>
-                A passionate aerospace engineer with expertise in advanced engineering principles and innovative problem-solving skills. 
-                Dedicated to pushing the boundaries of aerospace technology.
+                A passionate aerospace engineer with expertise in advanced engineering principles and innovative problem-solving.
             </p>
 
             <a href="Anil_Kumar_Yadav_CV.pdf" class="btn" download>Download CV</a>
-
         </div>
 
         <div class="hero-img">
-            <img src="img/profile.jpg" alt="Profile Photo">
+            <img src="img/profile.jpg" alt="Profile">
         </div>
 
     </div>
 </section>
-
-
 
   <!-- About Section -->
   <section id="about" class="about-section">
@@ -727,7 +728,13 @@
 
 </footer>
 
+<script>
+function toggleMenu() {
+    document.querySelector(".nav-menu").classList.toggle("active");
+}
+</script>
 
   <script src="script.js"></script>
 </body>
 </html>
+
