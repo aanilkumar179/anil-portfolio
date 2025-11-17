@@ -950,3 +950,99 @@ header {
         height: 30px;
     }
 }
+/* ============================================
+   MOBILE FIXES — NAVBAR + HERO + SKILLS
+============================================ */
+
+/* ---------- NAVBAR MOBILE ---------- */
+@media (max-width: 900px) {
+
+    header {
+        padding: 18px 22px;
+    }
+
+    .nav-right {
+        display: none; /* Hide menu on mobile */
+    }
+
+    /* Simple Mobile Menu Icon */
+    .mobile-menu-btn {
+        display: block;
+        font-size: 32px;
+        color: #222;
+        cursor: pointer;
+    }
+}
+
+/* Actual menu dropdown */
+@media (max-width: 900px) {
+    .mobile-nav-active .nav-right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background: #fff;
+        width: 100%;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        padding: 20px 0;
+        border-top: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+    }
+}
+
+/* ---------- HERO SECTION MOBILE ---------- */
+@media (max-width: 900px) {
+    #hero {
+        padding: 120px 6vw 60px;
+    }
+
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-img img {
+        width: 240px;
+        height: 240px;
+        border-width: 6px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text h2 {
+        font-size: 20px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+}
+
+/* ---------- SKILLS SECTION MOBILE FIX ---------- */
+@media (max-width: 900px) {
+
+    .skills-grid {
+        flex-wrap: wrap; /* allow wrapping */
+        justify-content: center;
+    }
+
+    .skill-card {
+        width: 85%;  /* fit mobile width */
+        max-width: 360px;
+    }
+
+    .skills-section {
+        white-space: normal;
+        overflow-x: hidden;
+    }
+}
+
